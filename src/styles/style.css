@@ -1,1 +1,89 @@
-/* Escreva seu código aqui */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+html {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+header p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+}
+
+section img:nth-child(2) {
+    margin: 0 32px;
+}
+
+section p {
+    font-size: 14px;
+    text-align: center;
+    padding: 8px;
+}
+
+section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    margin-bottom: 16px;
+    font-size: 18px;
+    padding: 8px 4px;
+    width: 310px;
+}
+
+button {
+    padding: 16px 32px;
+    width: 150px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 4px;
+}
+
+button:nth-child(1) {
+    background-color: lightgreen;
+}
+
+button:nth-child(2) {
+    background-color: lightcoral;
+}
+
+.vs {
+    height: 80px;
+}
+
+.rock,
+.scissor {
+    height: 160px;
+}
+
+.question {
+    height: 220px;
+}
+
+.paper {
+    height: 220px;
+}

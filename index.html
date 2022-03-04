@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Document</title>
 </head>
+
 <body>
-  <!-- Escreva seu código aqui -->
+    <header>
+        <h1>Pedra Papel Tesoura</h1>
+        <p>Regras:</p>
+        <p>Pedra vence tesoura, tesoura vence papel, papel vence pedra.</p>
+    </header>
+    <main>
+        <section>
+            <img id="left" class="question" src="src/assets/question.png" />
+            <img class="vs" src="src/assets/vs.png" />
+            <img id="right" class="question" src="src/assets/question.png" />
+        </section>
+        <section>
+            <select id="option">
+        <option value="R">Pedra</option>
+        <option value="P">Papel</option>
+        <option value="S">Tesoura</option>
+      </select>
+            <div>
+                <button id="play">JOGAR</button>
+                <button id="reset">REINICIAR</button>
+            </div>
+        </section>
+        <section>
+            <p id="message">Mensagem</p>
+        </section>
+    </main>
+    <script src="src/script.js" type="module"></script>
 </body>
+
 </html>
